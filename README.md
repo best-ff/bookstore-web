@@ -14,8 +14,8 @@ Dự án này là một ứng dụng web cửa hàng sách trực tuyến đư�
 
    - Nhân bản kho lưu trữ dự án về máy tính của bạn và di chuyển vào thư mục dự án:
      ```bash
-     git clone https://github.com/luvc-cs/online-bookstore.git
-     cd online-bookstore
+     git clone https://github.com/best-ff/bookstore-web.git
+     cd bookstore-web
      ```
 
 2. **Thiết Lập Môi Trường Python**:
