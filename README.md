@@ -36,14 +36,40 @@ Dự án này là một ứng dụng web cửa hàng sách trực tuyến đư�
      pip install mysqlclient django
      ```
 
-3. **Áp Dụng Di Chuyển Cơ Sở Dữ Liệu**:
+3. **Cập Nhật Cài Đặt Của Ứng Dụng**:
+
+   - Mở tệp `settings.py`:
+     ```bash
+     sudo nano core/settings.py
+     ```
+
+   - Cập nhật `ALLOWED_HOSTS`:
+     ```bash
+     ALLOWED_HOSTS = ['9.9.9.9']
+     ```
+     
+   - Cập nhật `DATABASES`:
+     ```bash
+     DATABASES = {
+         'default': {
+             'ENGINE': 'django.db.backends.mysql',
+             'NAME': 'dtb_bookstore',
+             'USER': 'admin',
+             'PASSWORD': 'admin@123',
+             'HOST': 'server.admin-9-9-9-9.ap-southeast-9.rds.amazonaws.com',
+             'PORT': '3306',
+        }
+     }
+     ```
+
+4. **Áp Dụng Di Chuyển Cơ Sở Dữ Liệu**:
 
    - Chạy các di chuyển cơ sở dữ liệu của Django để tạo các bảng cần thiết trong cơ sở dữ liệu của bạn:
      ```bash
      python manage.py migrate
      ```
 
-4. **Thiết Lập Nginx Cho Sản Xuất**:
+5. **Thiết Lập Nginx Cho Sản Xuất**:
 
    - Cập nhật danh sách gói và cài đặt Nginx:
      ```bash
@@ -103,37 +129,11 @@ Dự án này là một ứng dụng web cửa hàng sách trực tuyến đư�
      sudo systemctl restart nginx
      ```
 
-5. **Chạy Máy Chủ Phát Triển**:
+6. **Chạy Máy Chủ Phát Triển**:
 
    - Khởi động máy chủ phát triển Django để xem trước ứng dụng tại địa phương:
      ```bash
      python manage.py runserver 0.0.0.0:8000
      ```
-
-6. **Cập Nhật Cài Đặt Của Ứng Dụng**:
-
-   - Mở tệp `settings.py`:
-     ```bash
-     sudo nano core/settings.py
-     ```
-
-   - Cập nhật `ALLOWED_HOSTS`:
-     ```bash
-     ALLOWED_HOSTS = ['9.9.9.9']
-     ```
-     
-   - Cập nhật `DATABASES`:
-     ```bash
-     DATABASES = {
-         'default': {
-             'ENGINE': 'django.db.backends.mysql',
-             'NAME': 'dtb_bookstore',
-             'USER': 'admin',
-             'PASSWORD': 'luvc-030803',
-             'HOST': 'server.cjkkawmcm026.ap-southeast-2.rds.amazonaws.com',
-             'PORT': '3306',
-        }
-     }
-     ```
-     
+    
 Ứng dụng của bạn hiện đã có thể truy cập qua `https://9.9.9.9`.
