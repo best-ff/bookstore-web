@@ -135,5 +135,8 @@ Dự án này là một ứng dụng web cửa hàng sách trực tuyến đư�
      ```bash
      python manage.py runserver 0.0.0.0:8000
      ```
-    
-Ứng dụng của bạn hiện đã có thể truy cập qua `https://9.9.9.9`.
+
+   - Ứng dụng của bạn hiện đã có thể truy cập qua:
+     ```bash
+     https://9.9.9.9
+     ```
