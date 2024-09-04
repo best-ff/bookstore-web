@@ -125,16 +125,15 @@ Dự án này là một ứng dụng web cửa hàng sách trực tuyến đư�
    - Cập nhật `DATABASES`:
      ```bash
      DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dtb_bookstore',
-        'USER': 'admin',
-        'PASSWORD': 'luvc-030803',
-        'HOST': 'server.cjkkawmcm026.ap-southeast-2.rds.amazonaws.com',
-        'PORT': '3306',
-    }
-}
-
+         'default': {
+             'ENGINE': 'django.db.backends.mysql',
+             'NAME': 'dtb_bookstore',
+             'USER': 'admin',
+             'PASSWORD': 'luvc-030803',
+             'HOST': 'server.cjkkawmcm026.ap-southeast-2.rds.amazonaws.com',
+             'PORT': '3306',
+        }
+     }
      ```
      
 Ứng dụng của bạn hiện đã có thể truy cập qua `https://9.9.9.9`.
