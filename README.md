@@ -43,14 +43,7 @@ Dự án này là một ứng dụng web cửa hàng sách trực tuyến đư�
      python manage.py migrate
      ```
 
-4. **Chạy Máy Chủ Phát Triển**:
-
-   - Khởi động máy chủ phát triển Django để xem trước ứng dụng tại địa phương:
-     ```bash
-     python manage.py runserver 0.0.0.0:8000
-     ```
-
-5. **Thiết Lập Nginx Cho Sản Xuất**:
+4. **Thiết Lập Nginx Cho Sản Xuất**:
 
    - Cập nhật danh sách gói và cài đặt Nginx:
      ```bash
@@ -108,6 +101,13 @@ Dự án này là một ứng dụng web cửa hàng sách trực tuyến đư�
      ```bash
      sudo ln -s /etc/nginx/sites-available/domain /etc/nginx/sites-enabled/
      sudo systemctl restart nginx
+     ```
+
+5. **Chạy Máy Chủ Phát Triển**:
+
+   - Khởi động máy chủ phát triển Django để xem trước ứng dụng tại địa phương:
+     ```bash
+     python manage.py runserver 0.0.0.0:8000
      ```
 
 Ứng dụng của bạn hiện đã có thể truy cập qua `https://9.9.9.9`.
