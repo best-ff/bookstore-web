@@ -74,7 +74,14 @@ Dự án này là một ứng dụng web cửa hàng sách trực tuyến đư�
      server {
          listen 80;
          server_name 9.9.9.9;
-         return 301 https://$host$request_uri;
+     
+         location / {
+             proxy_pass http://localhost:8000;
+             proxy_set_header Host $host;
+             proxy_set_header X-Real-IP $remote_addr;
+             proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+             proxy_set_header X-Forwarded-Proto $scheme;
+         }
      }
 
      server {
