@@ -38,17 +38,17 @@ Dự án này là một ứng dụng web cửa hàng sách trực tuyến đư�
 
 3. **Cập Nhật Cài Đặt Của Ứng Dụng**:
 
-   - Mở tệp `settings.py`:
+   - Mở tệp tệp cài đặt của ứng dụng Django:
      ```bash
      sudo nano core/settings.py
      ```
 
-   - Cập nhật `ALLOWED_HOSTS`:
+   - Cập nhật danh sách địa chỉ IP và tên miền ứng dụng Django sẽ chấp nhận:
      ```bash
      ALLOWED_HOSTS = ['9.9.9.9']
      ```
      
-   - Cập nhật `DATABASES`:
+   - Cập nhật thiết lập kết nối giữa ứng dụng Django và cơ sở dữ liệu:
      ```bash
      DATABASES = {
          'default': {
