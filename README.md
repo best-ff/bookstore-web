@@ -27,7 +27,7 @@ Dự án này là một ứng dụng web cửa hàng sách trực tuyến đư�
      ```
    - Tạo môi trường ảo và kích hoạt nó:
      ```bash
-     python3.12 -m venv myenv
+     sudo python3.12 -m venv myenv
      source myenv/bin/activate
      ```
    - Cài đặt các gói phát triển bổ sung và các phụ thuộc Python cần thiết cho dự án:
