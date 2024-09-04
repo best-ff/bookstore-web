@@ -110,6 +110,21 @@ Dự án này là một ứng dụng web cửa hàng sách trực tuyến đư�
      python manage.py runserver 0.0.0.0:8000
      ```
 
-6. **Cập Nhật Cài Đặt Của Ứng dụng
+6. **Cập Nhật Cài Đặt Của Ứng Dụng**:
 
+   - Mở tệp `settings.py`:
+     ```bash
+     sudo nano core/settings.py
+     ```
+
+   - Cập nhật `ALLOWED_HOSTS`:
+     ```bash
+     ALLOWED_HOSTS = ['9.9.9.9']
+     ```
+     
+   - Cập nhật `DATABASES`:
+     ```bash
+     sudo nano core/settings.py
+     ```
+     
 Ứng dụng của bạn hiện đã có thể truy cập qua `https://9.9.9.9`.
