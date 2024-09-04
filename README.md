@@ -110,4 +110,6 @@ Dự án này là một ứng dụng web cửa hàng sách trực tuyến đư�
      python manage.py runserver 0.0.0.0:8000
      ```
 
+6. **Cập Nhật Cài Đặt Của Ứng dụng
+
 Ứng dụng của bạn hiện đã có thể truy cập qua `https://9.9.9.9`.
